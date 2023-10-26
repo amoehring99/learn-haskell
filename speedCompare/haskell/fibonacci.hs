@@ -1,9 +1,10 @@
+import System.Environment
+
 main :: IO ()
 main = do
-  putStrLn "Enter a number: "
-  n <- getLine
-  let num = read n :: Int
-  putStrLn ("The " ++ n ++ "th fibonacci number is: " ++ show (fib num))
+  args <- getArgs
+  let num = read (head args) :: Int
+  putStrLn ("The " ++ show num ++ "th fibonacci number is:\n" ++ show (fib num))
 
 fibAcc n n1 n2
   | n == 0 = n1
