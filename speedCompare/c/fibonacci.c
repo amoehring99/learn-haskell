@@ -4,7 +4,7 @@
 #include <inttypes.h>
 #include "kmbint.h"
 
-#define LENGTH 10000
+#define LENGTH 270000
 
 int main(int argc, char *argv[])
 {
